@@ -11,7 +11,7 @@ A Kodi plugin that allows the [Grayjay Android app](https://gitlab.futo.org/vide
 
 I used to use the official YouTube app with a Chromecast attached to my Kodi device to cast videos, and wanted to do the same thing with Kodi+Grayjay instead. 
 
-I initially tried [this plugin](https://github.com/c4valli/kodi-fcast-receiver) which did work sometimes but being a general FCast receiver it unsurprisingly often had issues with YouTube playback.
+I initially tried [this plugin](https://github.com/c4valli/kodi-fcast-receiver) which did work sometimes but being a general FCast receiver it unsurprisingly often had issues with YouTube playback. It was a very useful starting point though, and if you don't care about YouTube playback it'll be much more useful than this one. 
 
 ## Is this useful?
 
@@ -28,7 +28,7 @@ However Kodi also has a dedicated and frequently updated [YouTube plugin](https:
 
 Unfortunately the Grayjay app only sends a DASH manifest to the connected FCast receiver, and this doesn't seem to contain any references to the original video URL or ID.
 
-To get around this, I made a couple of very small modifications to the Grayjay app's casting code. The changes replace the contents of one of the normal message fields with the YouTube video ID.
+To get around this, I made a couple of very small modifications to the Grayjay app's casting code. The changes replace the contents of one of the standard FCast playback message fields with the YouTube video ID.
 
 All this plugin does is receive these slightly modified FCast messages, construct an appropriate URL targeting the Kodi YouTube plugin, and tell Kodi to play from that source. 
 
@@ -68,7 +68,7 @@ index 4c3e3323..fdf6d5e2 100644
 
 ```
 
-I only update my copy of the app every few months, so the changes below may not work on the latest version. The commit I'm currently using is `d1336c711a4d475e34165656add4194ba5f68cef` from March 3rd 2026.
+I only update my copy of the app every few months, so the changes above may not work on the latest version. The commit I'm currently using is `d1336c711a4d475e34165656add4194ba5f68cef` from March 3rd 2026.
 
 
 Current builds of Grayjay require the [FCast Sender SDK](https://github.com/futo-org/fcast/tree/master/sdk/sender). This requires some additional work to configure before you can build Grayjay itself:
