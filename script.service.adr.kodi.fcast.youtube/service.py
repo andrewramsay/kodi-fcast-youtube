@@ -282,7 +282,6 @@ class FCastClientSession(threading.Thread):
 
         packet = self.__get_fcast_header(opcode, len(packet_body) + 1)
         packet += packet_body
-        # TODO - why was i not sending replies to anything but playbackupdates??
 
         try:
             self.connection.send(packet)
