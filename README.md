@@ -11,7 +11,7 @@ A Kodi plugin that allows the [Grayjay Android app](https://gitlab.futo.org/vide
 
 I used to use the official YouTube app with a Chromecast attached to my Kodi device to cast videos, and wanted to do the same thing with Kodi+Grayjay instead. 
 
-I initially tried [this plugin](https://github.com/c4valli/kodi-fcast-receiver) which did work sometimes but being a general FCast receiver it unsurprisingly often had issues with YouTube playback.
+I initially tried [this plugin](https://github.com/c4valli/kodi-fcast-receiver) which did work sometimes but being a general FCast receiver it unsurprisingly often had issues with YouTube playback. It was a very useful starting point though, and if you don't care about YouTube playback it'll be much more useful than this one. 
 
 ## Is this useful?
 
