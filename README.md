@@ -68,7 +68,7 @@ index 4c3e3323..fdf6d5e2 100644
 
 ```
 
-I only update my copy of the app every few months, so the changes below may not work on the latest version. The commit I'm currently using is `d1336c711a4d475e34165656add4194ba5f68cef` from March 3rd 2026.
+I only update my copy of the app every few months, so the changes above may not work on the latest version. The commit I'm currently using is `d1336c711a4d475e34165656add4194ba5f68cef` from March 3rd 2026.
 
 
 Current builds of Grayjay require the [FCast Sender SDK](https://github.com/futo-org/fcast/tree/master/sdk/sender). This requires some additional work to configure before you can build Grayjay itself:
