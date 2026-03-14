@@ -28,7 +28,7 @@ However Kodi also has a dedicated and frequently updated [YouTube plugin](https:
 
 Unfortunately the Grayjay app only sends a DASH manifest to the connected FCast receiver, and this doesn't seem to contain any references to the original video URL or ID.
 
-To get around this, I made a couple of very small modifications to the Grayjay app's casting code. The changes replace the contents of one of the normal message fields with the YouTube video ID.
+To get around this, I made a couple of very small modifications to the Grayjay app's casting code. The changes replace the contents of one of the standard FCast playback message fields with the YouTube video ID.
 
 All this plugin does is receive these slightly modified FCast messages, construct an appropriate URL targeting the Kodi YouTube plugin, and tell Kodi to play from that source. 
 
